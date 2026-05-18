@@ -1,0 +1,21 @@
+[project]
+name = "agris-cv-scanner"
+version = "0.1.0"
+description = "CV Scanner Agent - Reviews CVs against Job Descriptions using Strands SDK + AgentCore"
+requires-python = ">=3.10"
+dependencies = [
+    "strands-agents>=0.1.0",
+    "strands-agents-tools>=0.1.0",
+    "bedrock-agentcore>=0.1.0",
+    "boto3>=1.35.0",
+    "pypdf>=5.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx>=0.27.0",
+    "pytest>=8.0.0",
+]
+deploy = [
+    "bedrock-agentcore-starter-toolkit>=0.1.0",
+]
